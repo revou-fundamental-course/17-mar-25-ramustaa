@@ -51,6 +51,14 @@ main {
     background-size: cover;
     background-position: center;
 }
+.section-imagePP {
+    background-image: url(../assets/persegi_panjang.jpg);
+    width: 200px;
+    height: 100px;
+    justify-self: center;
+    background-size: cover;
+    background-position: center;
+}
 
 .calculate-content {
     border: 1px solid;
@@ -64,5 +72,9 @@ section {
 
 footer {
     text-align: center;
+}
+.reset-btn {
+    color: white;
+    background-color: orangered;
 }
 
