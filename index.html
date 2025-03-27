@@ -44,33 +44,17 @@
             <!-- Konten Perhitungan -->
             <div class="calculate-content">
                 <h3>Hitung Luas</h3>
-                <label for="sisiLuas">Masukkan Panjang Sisi:</label>
+                <label for="sisiLuas">Masukkan Nilai Sisi:</label>
                 <br>
                 <input type="number" id="sisiLuas" placeholder="Masukkan sisi">
                 <br>
-                <button onclick="hitungLuas()">Hitung Luas</button>
-                <button class="reset-btn" onclick="resetLuas()">Reset</button>
+                <button onclick="hitungluaspersegi()">Hitung Luas</button>
+                <button class="reset-btn" onclick="resetluaspersegi()">Reset</button>
                 <p id="luas"></p>
-                
             </div>
-
-            <script>
-                function hitungLuas() {
-                    let sisi = document.getElementById("sisiLuas").value;
-            if (sisi > 0) {
-                let luas = sisi * sisi;
-                document.getElementById("luas").innerHTML = `Luas: ${luas} cm²`;
-            } else {
-                document.getElementById("luas").innerHTML = "Masukkan nilai sisi yang valid!";
-            }
-        }
-        function resetLuas() {
-            document.getElementById("sisiLuas").value = "";
-            document.getElementById("luas").innerHTML = "";
-        }   
-            </script>
+            <!-- disini bisa membuat script js -->
         </section>
-
+        
         <!--Section Keliling-->
         <section>
             <header class="section-header">
@@ -83,34 +67,15 @@
             <!-- Konten Perhitungan -->
             <div class="calculate-content">
                 <h3>Hitung Keliling</h3>
-                <label for="sisiKeliling">Masukkan Panjang Sisi:</label>
+                <label for="sisiKeliling">Masukkan Nilai Sisi:</label>
                 <br>
                 <input type="number" id="sisiKeliling" placeholder="Masukkan sisi">
                 <br>
-                <button onclick="hitungKeliling()">Hitung Keliling</button>
-                <button class="reset-btn" onclick="resetKeliling()">Reset</button>
+                <button onclick="hitungkelilingpersegi()">Hitung Keliling</button>
+                <button class="reset-btn" onclick="resetkelilingpersegi()">Reset</button>
                 <p id="keliling"></p>
             </div>
-
-            <script>
-            function hitungKeliling() {
-            let sisi = document.getElementById("sisiKeliling").value;
-            if (sisi > 0) {
-                let keliling = 4 * sisi;
-                document.getElementById("keliling").innerHTML = `Keliling: ${keliling} cm`;
-            } else {
-                document.getElementById("keliling").innerHTML = "Masukkan nilai sisi yang valid!";
-            }
-        }
-        function resetKeliling() {
-            document.getElementById("sisiKeliling").value = "";
-            document.getElementById("keliling").innerHTML = "";
-        }
-            </script>
         </section>
-
-        
-
     </main>
 
     <!--Footer-->
